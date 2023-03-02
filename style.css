@@ -32,6 +32,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+ul li {
+  list-style: none;
+}
+
 body {
   color: var(--text-color);
   display: flex;
