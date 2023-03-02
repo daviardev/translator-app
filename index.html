@@ -4,13 +4,37 @@
 <head>
   <meta charset='UTF-8' />
   <link rel='icon' type='image/svg+xml' href='/favicon.png' />
+  <link rel='preconnect' href='https://fonts.googleapis.com'>
+  <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin>
+  <link href='https://fonts.googleapis.com/css2?family=Poppins&display=swap' rel='stylesheet'>
   <meta name='viewport' content='width=device-width, initial-scale=1.0' />
   <title>Translate App - Translates any language</title>
 </head>
 
 <body>
-  <div id='app'></div>
+  <div class='container'>
+    <div class='card input-wrapper'>
+      <div class='from'>
+        <span class='heading'>From : </span>
+        <div class='dropdown-container active' id='input-language'>
+          <div class='dropdown-toggle'>
+            <ion-icon name="chevron-down-outline"></ion-icon>
+            <span class='selected'>Auto Detect</span>
+          </div>
+          <ul class="dropdown-menu">
+            <li class="option active">Option 1</li>
+            <li class="option">Option 2</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class='center'></div>
+    <div class='card output-wrapper'></div>
+  </div>
+  <div id='app' />
   <script type='module' src='/main.js'></script>
+  <script type='module' src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js'></script>
+<script nomodule src='https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js'></script>
 </body>
 
 </html>
